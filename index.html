@@ -8,6 +8,12 @@
 </head>
 <body>
     <input type ="button" onclick="history.back()" value="回到上一頁"></input>
-    <input onclick="window.close();" value="關閉視窗" type="button">
+    <input onclick="wclose();" value="關閉視窗" type="button">
+    <script>
+        function wclose(){
+            window.open("about:blank", "_self");
+            window.close();
+        }
+    </script>
 </body>
 </html>
